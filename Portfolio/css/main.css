@@ -16,7 +16,7 @@ body, header, nav, footer {
 }
 
 header{
-    font-size: 175%;
+    font-size: 125%;
     color: var(--global-color-1);
     text-indent: 30px;
 }
@@ -24,6 +24,10 @@ header h2{
     font-size: 130%;
     font-style:italic;
     text-indent: 30px;
+}
+header img{
+    float:left;
+
 }
 
 body {
@@ -35,4 +39,36 @@ body {
 a:focus,
 a:hover {
     font-style: italic;
+}
+
+main{
+    clear:right;
+}
+main h3 {
+    font-size: 130%;
+    color: var(--global-color-1);
+}
+
+nav h4{
+    font-size: 130%;
+    color: var(--global-color-1);
+}
+footer{
+    font-size: 85%;
+}
+
+img{
+    max-width: 100%;
+    max-height: auto;
+    display: block;
+}
+nav h2{
+    font: size 120%;
+    color:var(--global-color-1);
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
 }
