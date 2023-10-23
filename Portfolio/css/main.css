@@ -1,0 +1,38 @@
+/* James Smith
+* October 22, 2023
+*main.css
+*/
+
+/*Reset Style Rule*/
+body, header, nav, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+:root{
+    --global-color-1: #800000;
+}
+
+header{
+    font-size: 175%;
+    color: var(--global-color-1);
+    text-indent: 30px;
+}
+header h2{
+    font-size: 130%;
+    font-style:italic;
+    text-indent: 30px;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin-left: 10px;
+
+}
+a:focus,
+a:hover {
+    font-style: italic;
+}
