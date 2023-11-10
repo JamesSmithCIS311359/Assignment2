@@ -1,12 +1,118 @@
 <!DOCTYPE html>
-<!--James Smith, CIS 311 Assignment 2, About Me Page 10/22/2023 -->
-<html Lang="en"></html>
+<!-- James Smith, CIS 311 Assignment 2, About Me Page 10/22/2023 -->
+<html lang="en">
+
 <head>
-    <title>About Me</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon-32x32.png">
-    <link rel = "stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Custom Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        #container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+            display: none; /* Initially hide the navigation */
+        }
+
+        nav a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+        }
+
+        #menu-icon {
+            display: none; /* Hide the menu icon on larger screens */
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        /* Mobile Styles */
+        @media only screen and (max-width: 800px) {
+            nav {
+                display: block; /* Show the navigation on small screens */
+            }
+
+            nav a {
+                border-bottom: 1px solid #ccc;
+            }
+
+            #container nav {
+                display: none; /* Initially hide the navigation on small screens */
+            }
+
+            #menu-icon {
+                display: block; /* Show the menu icon on small screens */
+            }
+        }
+    </style>
 </head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>About Me</h1>
+            <div id="menu-icon">&#9776; Menu</div>
+        </header>
+
+        <nav>
+            <a href="Overview">Overview</a>
+            <a href="Education">Education</a>
+            <a href="Certifications">Certifications</a>
+            <a href="Hobbies">Hobbies</a>
+            <a href="Woodturning">Woodturning</a>
+            <!-- Add more navigation links as needed -->
+        </nav>
+
+        
+
+    </div>
+
+    <script>
+        document.getElementById("menu-icon").addEventListener("click", function () {
+            var nav = document.querySelector("nav");
+            nav.style.display = (nav.style.display === "block" ? "none" : "block");
+        });
+    </script>
+</body>
 <body>
     <div id="container">
     <header>
@@ -38,9 +144,10 @@
     </nav>
         
             
-    <img src="/Portfolio/images/jamessmith.jpg" alt="James Smith 2023">
+   
     <main>
         <h1>Overview</h1>
+        <img src="/Portfolio/images/jamessmith-min.jpg" alt="James Smith 2023">
         <p>
             I am a full-time student at Colorado State University Pueblo, seeking a BA in Computer 
             Information Systems with an emphasis in Cyber Security. I work at Arapahoe Community College 
