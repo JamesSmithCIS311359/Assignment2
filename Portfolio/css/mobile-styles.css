@@ -56,21 +56,60 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-
-@media only screen and (max-width: 800px) {
+/* Mobile */
+/* @media only screen and (max-width: 800px) {
     nav {
         display: none; /* Show the navigation on small screens */
-    }
+   /* }
 
-    nav a {
+ /*   nav a {
         border-bottom: 1px solid rgba(34, 109, 38, 0.686);
     }
 
     #container nav {
         display: none; /* Initially hide the navigation on small screens */
+    /*}
+
+ /*   #menu-icon {
+        display: block; /* Show the menu icon on small screens */
+    /*}
+} /*
+
+
+
+/* Tablet Styles (for viewports up to 768px width) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Add tablet-specific styles here */
+    #menu-icon {
+        display: none; /* Hide the menu icon on tablets */
     }
 
-    #menu-icon {
-        display: block; /* Show the menu icon on small screens */
+    nav {
+        display: block; /* Show the navigation on tablets */
     }
+
+    /* Add other tablet-specific styles as needed */
 }
+
+/* Desktop Styles (for viewports 769px width and larger) */
+@media only screen and (min-width: 769px) {
+    /* Add desktop-specific styles here */
+    #menu-icon {
+        display: none; /* Hide the menu icon on desktops */
+    }
+
+    nav {
+        display: block; /* Show the navigation on desktops */
+    }
+
+    /* Example of using a dynamic pseudo-class (hover) */
+    nav a:hover {
+        color: #2e3e94; /* Change link color on hover */
+    }
+
+    /* Add other desktop-specific styles as needed */
+}
+
+/* Other styles that apply to all viewports go here */
+
+/* Additional comments for new style rules or sections as appropriate */
