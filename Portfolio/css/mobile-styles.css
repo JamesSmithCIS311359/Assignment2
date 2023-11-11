@@ -1,0 +1,76 @@
+/* James Smith
+* October 22, 2023
+*mobile-styles.css
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    display:block; 
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #a71b1b;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #cc2e2e;
+}
+
+#menu-icon {
+    display:block; 
+    background-color: #1a581daf;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 800px) {
+    nav {
+        display: none; /* Show the navigation on small screens */
+    }
+
+    nav a {
+        border-bottom: 1px solid rgba(34, 109, 38, 0.686);
+    }
+
+    #container nav {
+        display: none; /* Initially hide the navigation on small screens */
+    }
+
+    #menu-icon {
+        display: block; /* Show the menu icon on small screens */
+    }
+}

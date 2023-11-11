@@ -27,15 +27,25 @@ header h2{
 }
 header img{
     float:left;
-
+    
 }
 
 body {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 100%;
     margin-left: 10px;
-
 }
+#menu-icon {
+    display:none; 
+    background-color: #1a581daf;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    }
+
 a:focus,
 a:hover {
     font-style: italic;
@@ -49,6 +59,7 @@ main h3 {
     color: var(--global-color-1);
 }
 
+
 nav h4{
     font-size: 130%;
     color: var(--global-color-1);
@@ -58,7 +69,7 @@ footer{
 }
 
 img{
-    max-width: 100%;
+    max-width: 50%;
     max-height: auto;
 
 }
@@ -71,4 +82,8 @@ ul {
 }
 a {
     text-decoration: none;
+}
+
+li{
+    list-style-type: none;
 }
