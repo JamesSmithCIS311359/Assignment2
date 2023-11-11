@@ -1,0 +1,32 @@
+/* James Smith
+* November 11, 2023
+* main.css
+*/
+
+/* Reset Style Rule */
+body, article, section, aside, nav, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+:root {
+    --global-color-1: #0f662c;
+}
+/* Add these rules to your existing CSS files */
+
+/* CSS Grid Layout */
+body {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust column layout as needed */
+    gap: 20px; /* Adjust gap between grid items as needed */
+}
+
+/* Box Shadow */
+#container {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a box shadow to the container */
+}
+
+/* Text Shadow */
+h4 {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Add a text shadow to the H4 elements */
+}

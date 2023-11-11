@@ -1,42 +1,43 @@
 /* James Smith
 * October 22, 2023
-*main.css
+* main.css
 */
 
-/*Reset Style Rule*/
-body, header, nav, footer {
+/* Reset Style Rule */
+body, article, section, aside, nav, footer {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-
-:root{
+:root {
     --global-color-1: #800000;
 }
 
-header{
+header {
     font-size: 125%;
     color: var(--global-color-1);
     text-indent: 30px;
 }
-header h2{
+
+header h2 {
     font-size: 130%;
-    font-style:italic;
+    font-style: italic;
     text-indent: 30px;
 }
-header img{
-    float:left;
-    
+
+header img {
+    float: left;
 }
 
 body {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
     margin-left: 10px;
 }
+
 #menu-icon {
-    display:none; 
+    display: none;
     background-color: #1a581daf;
     color: #fff;
     padding: 10px;
@@ -44,46 +45,49 @@ body {
     border-radius: 10px;
     cursor: pointer;
     margin-bottom: 10px;
-    }
+}
 
 a:focus,
 a:hover {
     font-style: italic;
 }
 
-main{
-    clear:right;
+main {
+    clear: right;
 }
+
 main h3 {
     font-size: 130%;
     color: var(--global-color-1);
 }
 
-
-nav h4{
+nav h4 {
     font-size: 130%;
     color: var(--global-color-1);
 }
-footer{
+
+footer {
     font-size: 85%;
 }
 
-img{
+img {
     max-width: 50%;
     max-height: auto;
+}
 
+nav h2 {
+    font-size: 120%;
+    color: var(--global-color-1);
 }
-nav h2{
-    font: size 120%;
-    color:var(--global-color-1);
-}
+
 ul {
     list-style-type: none;
 }
+
 a {
     text-decoration: none;
 }
 
-li{
+li {
     list-style-type: none;
 }
