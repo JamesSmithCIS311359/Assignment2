@@ -64,7 +64,71 @@
             <H4>Blood Moon Slimline Pen</H4>
 
         </div>
-    
+        
+        
+      </head>
+      <body>
+      
+        <div class="container">
+          <h2>Woodworking Order Form</h2>
+      
+          <form action="submit_order.php" method="post">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="projectType">Project Type:</label>
+              <select id="projectType" name="projectType" required>
+                <option value="pen">Pen</option>
+                <option value="bowl">Bowl</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+      
+            <div id="penOptions" class="form-group" style="display: none;">
+              <label for="penType">Pen Type:</label>
+              <select id="penType" name="penType">
+                <option value="slimline">Slimline</option>
+                <option value="fountain">Fountain</option>
+                <option value="otherPen">Other</option>
+              </select>
+            </div>
+      
+            <div class="form-group">
+              <label for="materialType">Material Type:</label>
+              <select id="materialType" name="materialType" required>
+                <option value="wood">Wood</option>
+                <option value="acrylic">Acrylic</option>
+              </select>
+            </div>
+      
+            <div class="form-group">
+              <label for="messages">Messages:</label>
+              <textarea id="messages" name="messages" rows="5" required></textarea>
+            </div>
+      
+            <button type="submit">Submit Order</button>
+          </form>
+        </div>
+      
+        <script>
+          document.getElementById("projectType").addEventListener("change", function() {
+            var penOptions = document.getElementById("penOptions");
+            if (this.value === "pen") {
+              penOptions.style.display = "block";
+            } else {
+              penOptions.style.display = "none";
+            }
+          });
+        </script>
+</div>
     </body>
     <footer><p>&copy; 2023, James Smith Portfolio, CIS 311 Assignment 3, Parker, CO 80134 
         <p>Email: <a href="mailto:j.smith@pack.csupueblo.edu">j.smith@pack.csupueblo.edu</a></p></footer>
