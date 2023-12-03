@@ -112,3 +112,55 @@ th, td {
     padding: 10px;
     border: 1px solid #0c661b;
 }
+/* Add this to your existing CSS file or create a new one */
+
+/* General styles for the LinkedIn icon */
+.linkedin-container {
+    display: flex; /* Use flex to align items horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 1em; /* Add padding for spacing */
+    position: relative; /* Position the pseudo-element relative to the container */
+}
+
+/* LinkedIn logo styles (replace these with your actual logo styles) */
+.linkedin-container img {
+    max-width: 50px; /* Adjust the max-width based on your design */
+}
+
+/* Black line below the LinkedIn icon */
+.linkedin-container::after {
+    content: "";
+    position: absolute; /* Position the line absolutely within the container */
+    bottom: 0;
+    left: 50%; /* Position the line at the center of the container */
+    transform: translateX(-50%); /* Center the line horizontally */
+    width: calc(100% - var(--linkedin-clear-space)); /* Adjust width based on clear space */
+    height: 1px;
+    background-color: #000;
+}
+
+/* Define the width of the type stroke of the letter "I" in em units */
+:root {
+    --linkedin-clear-space: 0.5em; /* Adjust this value based on LinkedIn's guidelines */
+}
+
+/* Styles for larger viewports (e.g., desktop) */
+@media (min-width: 768px) {
+    .linkedin-container {
+        /* Add desktop-specific styles here */
+    }
+}
+
+/* Styles for medium-sized viewports (e.g., tablet) */
+@media (max-width: 767px) {
+    .linkedin-container {
+        /* Add tablet-specific styles here */
+    }
+}
+
+/* Styles for smaller viewports (e.g., mobile) */
+@media (max-width: 480px) {
+    .linkedin-container {
+        /* Add mobile-specific styles here */
+    }
+}
