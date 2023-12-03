@@ -139,28 +139,28 @@ th, td {
     background-color: #000;
 }
 
-/* Define the width of the type stroke of the letter "I" in em units */
-:root {
-    --linkedin-clear-space: 0.5em; /* Adjust this value based on LinkedIn's guidelines */
-}
 
+:root {
+    --linkedin-clear-space: 0.5em; 
+}
+/*Linkedin Logo */
 /* Styles for larger viewports (e.g., desktop) */
 @media (min-width: 768px) {
     .linkedin-container {
-        /* Add desktop-specific styles here */
+        
     }
 }
 
 /* Styles for medium-sized viewports (e.g., tablet) */
 @media (max-width: 767px) {
     .linkedin-container {
-        /* Add tablet-specific styles here */
+        
     }
 }
 
 /* Styles for smaller viewports (e.g., mobile) */
 @media (max-width: 480px) {
     .linkedin-container {
-        /* Add mobile-specific styles here */
+        
     }
 }
