@@ -106,3 +106,9 @@ th, td {
     background-color: #cfb9b9;
 }
 
+#about-section {
+    transform: rotate(9deg); 
+    margin: 20px; 
+    padding: 10px;
+    border: 1px solid #0c661b;
+}
